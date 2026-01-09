@@ -1,0 +1,39 @@
+devices:
+  fields:
+    - name: weight
+      label: Weight
+      unit: kg
+      type: number
+      format: decimal
+      decimalPlaces: 2
+    - name: temperature
+      label: Temperature
+      unit: °C
+      type: number
+      format: decimal
+      decimalPlaces: 1
+    - name: status
+      label: Status
+      type: string
+      enum: [active, idle, error, maintenance]
+    - name: batteryLevel
+      label: Battery
+      unit: "%"
+      type: number
+      format: integer
+    - name: humidity
+      label: Humidity
+      unit: "%"
+      type: number
+      format: decimal
+      decimalPlaces: 1
+  display:
+    grid:
+      columns: 3
+      cardFields: [weight, status, temperature]
+      enableDragDrop: true
+      dragHandle: "hover"
+    table:
+      columns: [id, name, weight, temperature, status, batteryLevel, lastUpdate]
+      enableDragDrop: true
+      dragHandle: "always"
