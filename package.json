@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:netlify": "netlify dev",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest",
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^5.0.0",
     "@eslint/js": "^9.39.1",
+    "@netlify/functions": "^5.1.2",
     "@storybook/addon-a11y": "^10.2.1",
     "@storybook/addon-docs": "^10.2.1",
     "@storybook/addon-onboarding": "^10.2.1",
@@ -72,6 +74,7 @@
     "globals": "^16.5.0",
     "jsdom": "^27.4.0",
     "msw": "^2.12.7",
+    "netlify-cli": "^23.15.1",
     "playwright": "^1.58.0",
     "postcss": "^8.5.6",
     "storybook": "^10.2.1",
